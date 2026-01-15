@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Droid+Serif:wght@400;700&family=Mulish:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    color: #1B263B;
+    background-color: #F8FAFC;
+    line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+    background: linear-gradient(127deg, #ff6b6b, #ba2063);
+    color: white;
+    padding: 40px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.site-title {
+    font-family: 'Droid Serif', serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.site-tagline {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+/* Navigation */
+.site-nav {
+    background: white;
+    border-bottom: 2px solid #E2E8F0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    padding: 20px 0;
+    text-decoration: none;
+    color: #4A5568;
+    font-weight: 600;
+    font-size: 16px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ba2063;
+    border-bottom-color: #ba2063;
+}
+
+.nav-link.active {
+    color: #ba2063;
+    border-bottom-color: #ba2063;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 40px;
+}
+
+.page-title {
+    font-family: 'Droid Serif', serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1B263B;
+}
+
+.page-subtitle {
+    font-size: 18px;
+    color: #718096;
+    margin-bottom: 40px;
+}
+
+/* Update Cards */
+.updates-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.update-card {
+    background: white;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-left: 5px solid #ba2063;
+    transition: all 0.3s ease;
+}
+
+.update-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.update-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.update-date {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ba2063;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.update-department {
+    display: inline-block;
+    background: #FFF5F7;
+    color: #ba2063;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.update-owner {
+    font-size: 14px;
+    color: #718096;
+}
+
+.update-title {
+    font-family: 'Droid Serif', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1B263B;
+    margin-bottom: 12px;
+}
+
+.update-body {
+    font-size: 16px;
+    color: #4A5568;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.update-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.update-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #ba2063;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.update-link:hover {
+    color: #ff6b6b;
+    text-decoration: underline;
+}
+
+/* Department Grid */
+.department-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.department-card {
+    background: white;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+    border-top: 4px solid #ba2063;
+}
+
+.department-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    transform: translateY(-4px);
+}
+
+.department-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: #FFF5F7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #ba2063;
+}
+
+.department-name {
+    font-family: 'Droid Serif', serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1B263B;
+}
+
+.department-count {
+    font-size: 14px;
+    color: #718096;
+    margin-bottom: 16px;
+}
+
+.department-link {
+    display: inline-block;
+    background: linear-gradient(127deg, #ff6b6b, #ba2063);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.department-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(186, 32, 99, 0.3);
+}
+
+/* Footer */
+.site-footer {
+    background: #1B263B;
+    color: white;
+    padding: 40px 0;
+    margin-top: 80px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Filters */
+.filters-bar {
+    background: white;
+    padding: 20px 28px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filter-label {
+    font-weight: 700;
+    color: #1B263B;
+    font-size: 14px;
+}
+
+.filter-select {
+    padding: 8px 16px;
+    border: 2px solid #E2E8F0;
+    border-radius: 8px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    color: #4A5568;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: #ba2063;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-content,
+    .nav-content,
+    .main-content,
+    .footer-content {
+        padding: 0 20px;
+    }
+    
+    .site-title {
+        font-size: 32px;
+    }
+    
+    .nav-content {
+        gap: 20px;
+    }
+    
+    .department-grid {
+        grid-template-columns: 1fr;
+    }
+}
